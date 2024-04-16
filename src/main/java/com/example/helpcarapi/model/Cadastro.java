@@ -1,9 +1,14 @@
 package com.example.helpcarapi.model;
 
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "CADASTRO")
+@Getter
+@Setter
 public class Cadastro {
 
     @Id
@@ -16,62 +21,4 @@ public class Cadastro {
     private String cpf;
     private String dtNascimento;
     private boolean pcd;
-
-    // Getters e Setters
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public String getSobrenome() {
-        return sobrenome;
-    }
-
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getDtNascimento() {
-        return dtNascimento;
-    }
-
-    public void setDtNascimento(String dtNascimento) {
-        this.dtNascimento = dtNascimento;
-    }
-
-    public boolean isPcd() {
-        return pcd;
-    }
-
-    public void setPcd(boolean pcd) {
-        this.pcd = pcd;
-    }
 }
