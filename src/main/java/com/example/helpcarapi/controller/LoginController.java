@@ -2,7 +2,6 @@ package com.example.helpcarapi.controller;
 
 import com.example.helpcarapi.domain.dto.LoginDTO;
 import com.example.helpcarapi.service.LoginService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

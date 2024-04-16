@@ -9,6 +9,7 @@ import java.util.Map;
 public class LoginService {
 
     private static final Map<String, String> users = new HashMap<>();
+
     static {
         // Adicionando alguns usuários ao banco de dados fictício (email e senha)
         users.put("user1@example.com", "password1");
